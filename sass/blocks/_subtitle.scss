@@ -1,0 +1,15 @@
+.subtitle {    
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.6;
+
+    /* Tablet Big*/
+    @media (max-width: 1139px) {
+        font-size: 18px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        font-size: 16px;
+    }
+}

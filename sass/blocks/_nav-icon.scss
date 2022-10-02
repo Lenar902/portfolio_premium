@@ -1,0 +1,58 @@
+.nav-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 40px;
+    height: 25px;  
+    cursor: pointer;
+    position: relative; 
+    z-index: 99; 
+    
+    &--active {
+      position: fixed;
+      right: 15px;   
+    }
+  }
+  
+  .nav-icon__item {
+    position: relative;
+    width: 40px;
+    height: 5px;
+    background-color: #000;
+    cursor: pointer;
+  }
+  
+  .nav-icon__item::before,
+  .nav-icon__item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 5px;
+    background-color: #000;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+  
+  .nav-icon__item::before {
+    top: -10px; 
+  }
+  
+  .nav-icon__item::after { 
+    top: 10px;
+  }
+  
+  .nav-icon.nav-icon--active .nav-icon__item {
+    background-color: transparent;
+  }
+  
+  .nav-icon.nav-icon--active .nav-icon__item::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+  
+  .nav-icon.nav-icon--active .nav-icon__item::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }

@@ -1,0 +1,17 @@
+.nav-mobile {
+    padding-top: 32px;
+    padding-bottom: 4px;  
+     
+
+    /* Tablet Big */
+    @media (min-width: 899px) {
+        display: none;
+    }
+
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+}
