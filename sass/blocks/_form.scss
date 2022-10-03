@@ -13,12 +13,14 @@
 
     /* Tablet Small */
     @media (max-width: 899px) {
-        width: 290px;
+        width: 330px;
+        padding: 44px 25px 40px;
     }
 
     /* Mobile */
     @media (max-width: 767px) {
-        padding: 44px 15px 40px;
+        width: 290px; 
+        padding: 44px 15px 40px;       
     }
    
 }
