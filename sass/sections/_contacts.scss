@@ -1,6 +1,7 @@
 .contacts {
     padding-top: 70px;
     padding-bottom: 90px;
+    overflow: hidden;
     position: relative;
     background: linear-gradient(0deg, #F5FBFF, #F5FBFF), #F4F8F9;  
 
@@ -196,6 +197,13 @@
 
 .contact-form__success {
     font-size: 36px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 
